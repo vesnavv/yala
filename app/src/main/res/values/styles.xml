@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. Theme.AppCompat.Light.NoActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextToolbar</item>
+    </style>
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="AllTextViews">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_top_bottom_text</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_bottom_text</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/size_text</item>
+    </style>
+
+    <style name="AllTextViews.TextIcon">
+        <item name="android:layout_marginTop">@dimen/margin_icon_top</item>
+        <item name="android:paddingBottom">@dimen/padding_text_icon_progress_top_bottom</item>
+        <item name="android:paddingTop">@dimen/padding_text_icon_progress_top_bottom</item>
+        <item name="android:paddingLeft">@dimen/padding_text_icon_progress_left_right</item>
+        <item name="android:paddingRight">@dimen/padding_text_icon_progress_left_right</item>
+        <item name="android:textColor">@color/colorTextIcon</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/text_view_progress</item>
+    </style>
+
+    <style name="AllTextViews.HintsTextView">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">@dimen/size_text</item>
+        <item name="android:layout_width">@dimen/width_hints</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_marginRight">@dimen/margin_between_hint_and_text</item>
+    </style>
+
+    <style name="AllTextViews.TextsTextView">
+        <item name="android:layout_width">@dimen/width_hints</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginLeft">@dimen/margin_between_hint_and_text</item>
+    </style>
+
+    <style name="AllLayouts">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="AllLayouts.LinearLayoutsWithTextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AllLayouts.MainWithScroll">
+        <item name="android:background">@color/colorScrollView</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AllLayouts.MainLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_general_lin_layout</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DividersView">
+        <item name="android:layout_height">@dimen/height_divider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/colorDividers</item>
+    </style>
+
+    <style name="RecyclerViewStyleInScroll">
+        <item name="android:layout_height">@dimen/height_recycler_scroll</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="RecyclerImageLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/margin_recycler_image</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RecyclerImageLayout.RecyclerImage">
+        <item name="android:maxHeight">@dimen/height_width_max_recycler_image</item>
+        <item name="android:maxWidth">@dimen/height_width_max_recycler_image</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@mipmap/ic_launcher</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+</resources>

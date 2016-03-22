@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Yalantis First</string>
+
+    <string name="image_in_rec">Images in RecyclerView</string>
+
+    <string name="hint_created">Created</string>
+    <string name="hint_resolve">Fix until</string>
+    <string name="hint_registered">Registered</string>
+    <string name="hint_responsible">Responsible</string>
+
+    <string name="text_created">25 february 2016</string>
+    <string name="text_registered">26 february 2016</string>
+    <string name="text_resolve">29 february 2016</string>
+    <string name="text_title">Municipal economy</string>
+    <string name="text_icon_progress">In progress</string>
+    <string name="text_responsible">Dnepropetrovsk MVK ()</string>
+    <string name="text_info">Android is a mobile operating system (OS) currently developed by Google,
+        based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.</string>
+
+</resources>

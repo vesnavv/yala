@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RecyclerImageLayout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/RecyclerImageLayout.RecyclerImage"
+        android:contentDescription="@string/image_in_rec" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

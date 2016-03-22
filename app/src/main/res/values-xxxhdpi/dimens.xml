@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margin_general_lin_layout">10dp</dimen>
+    <dimen name="margin_recycler_image">4dp</dimen>
+    <dimen name="margin_top_bottom_text">10dp</dimen>
+    <dimen name="margin_icon_top">0dp</dimen>
+    <dimen name="margin_between_hint_and_text">4dp</dimen>
+
+    <dimen name="padding_text_icon_progress_top_bottom">4dp</dimen>
+    <dimen name="padding_text_icon_progress_left_right">12dp</dimen>
+
+    <dimen name="width_hints">0dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="height_recycler_scroll">220dp</dimen>
+    <dimen name="height_width_max_recycler_image">200dp</dimen>
+
+    <dimen name="radius_custom_icon_text">50dp</dimen>
+
+    <dimen name="size_text">15sp</dimen>
+    <dimen name="size_title">18sp</dimen>
+
+</resources>

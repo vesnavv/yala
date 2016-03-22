@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AllLayouts.MainWithScroll"
+    >
+
+    <LinearLayout style="@style/AllLayouts.MainLinearLayout">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/AllTextViews"
+            android:textSize="@dimen/size_title"
+            tools:text="Комунальне господарство" />
+
+        <TextView
+            android:id="@+id/tvIconProgress"
+            style="@style/AllTextViews.TextIcon"
+            tools:text="В роботі" />
+
+        <View style="@style/DividersView" />
+
+        <LinearLayout style="@style/AllLayouts.LinearLayoutsWithTextView">
+
+            <TextView
+                android:id="@+id/tvCreate"
+                style="@style/AllTextViews.HintsTextView"
+                android:hint="@string/hint_created" />
+
+            <TextView
+                android:id="@+id/tvDateCreate"
+                style="@style/AllTextViews.TextsTextView"
+                tools:text="25 лютого 2016" />
+        </LinearLayout>
+
+        <View style="@style/DividersView" />
+
+        <LinearLayout style="@style/AllLayouts.LinearLayoutsWithTextView">
+
+            <TextView
+                android:id="@+id/tvRegistered"
+                style="@style/AllTextViews.HintsTextView"
+                android:hint="@string/hint_registered" />
+
+            <TextView
+                android:id="@+id/tvDateRegistered"
+                style="@style/AllTextViews.TextsTextView"
+                tools:text="26 лютого 2016" />
+        </LinearLayout>
+
+        <View style="@style/DividersView" />
+
+        <LinearLayout style="@style/AllLayouts.LinearLayoutsWithTextView">
+
+            <TextView
+                android:id="@+id/tvResolve"
+                style="@style/AllTextViews.HintsTextView"
+                android:hint="@string/hint_resolve" />
+
+            <TextView
+                android:id="@+id/tvDateResolve"
+                style="@style/AllTextViews.TextsTextView"
+                tools:text="29 лютого 2016" />
+        </LinearLayout>
+
+        <View style="@style/DividersView" />
+
+        <LinearLayout style="@style/AllLayouts.LinearLayoutsWithTextView">
+
+            <TextView
+                android:id="@+id/tvResponsible"
+                style="@style/AllTextViews.HintsTextView"
+                android:hint="@string/hint_responsible" />
+
+            <TextView
+                android:id="@+id/tvWhoIsResponsible"
+                style="@style/AllTextViews.TextsTextView"
+                tools:text="Дніпропетровський МВК ()" />
+        </LinearLayout>
+
+        <View style="@style/DividersView" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            style="@style/AllTextViews"
+            tools:text="Карл у Клары украл кораллы, а Клара-краля подкралась к ларю, да и украла у Карла кларнет." />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView"
+            style="@style/RecyclerViewStyleInScroll" />
+    </LinearLayout>
+</ScrollView>

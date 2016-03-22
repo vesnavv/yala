@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@color/colorCustomIconText" />
+
+    <stroke
+        android:color="@color/colorCustomIconText" />
+
+    <corners android:radius="@dimen/radius_custom_icon_text" />
+
+</shape>
