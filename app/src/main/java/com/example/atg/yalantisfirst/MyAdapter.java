@@ -12,21 +12,21 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter {
+public class MyAdapter extends RecyclerView.Adapter { //[Comment] Your adapter? Use more informative class names
 
-    private ArrayList <Uri> mPictures;
-    private Context context;
+    private ArrayList <Uri> mPictures; //[Comment] Use abstraction instead of realization
+    private Context context; //[Comment] Wrong name, use google
     private RecyclerViewOnClickListener mListener;
 
     public MyAdapter(Context context, ArrayList<Uri> mPictures, RecyclerViewOnClickListener mListener) {
         this.context = context;
         this.mPictures = mPictures;
-        this.mListener = mListener;
+        this.mListener = mListener; //[Comment] without this
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_image,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_image,parent,false); //[Comment] Wrong formatting
         return new ViewHolder(view);
     }
 
@@ -36,14 +36,14 @@ public class MyAdapter extends RecyclerView.Adapter {
 
         Picasso.with(context)
                 .load(mPictures.get(position))
-                .resize(400, 400)
+                .resize(400, 400) //[Comment] Magic numbers
                 .into(holder.imageView);
 
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (mListener != null){
-                    mListener.onImageClick("ImageView " + position);
+                    mListener.onImageClick("ImageView " + position); //[Comment] Hardcode
                 }
             }
         });
@@ -55,7 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter {
     }
 
     private class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView imageView;
+        ImageView imageView; //[Comment] Wrong visibility modifier
         public ViewHolder(View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);

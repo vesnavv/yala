@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+//[Comment] Wrong toolbar and status bar colors.
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,RecyclerViewOnClickListener{
 
     private RecyclerView mRecyclerView;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Toolbar toolbar;
         toolbar = (Toolbar)findViewById(R.id.toolBar);
-        toolbar.setTitle("CE-1257218");
+        toolbar.setTitle("CE-1257218"); //[Comment] Hardcode
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -43,10 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
         ArrayList<Uri> picList= new ArrayList<>();
-        picList.add(Uri.parse("http://i.imgur.com/aqsvgHP.jpg"));
-        picList.add(Uri.parse("http://i.imgur.com/XsuMFob.jpg"));
-        picList.add(Uri.parse("http://i.imgur.com/QzPTUFi.jpg"));
-        picList.add(Uri.parse("http://i.imgur.com/5L6X4v5.png"));
+        picList.add(Uri.parse("http://i.imgur.com/aqsvgHP.jpg")); //[Comment] Hardcode
+        picList.add(Uri.parse("http://i.imgur.com/XsuMFob.jpg")); //[Comment] Hardcode
+        picList.add(Uri.parse("http://i.imgur.com/QzPTUFi.jpg")); //[Comment] Hardcode
+        picList.add(Uri.parse("http://i.imgur.com/5L6X4v5.png")); //[Comment] Hardcode
 
         init();
         setAllText();
@@ -109,8 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 v.getId()==R.id.tvRegistered||
                 v.getId()==R.id.tvResolve||
                 v.getId()==R.id.tvResponsible) {
-
-            Toast.makeText(MainActivity.this,"TextView",Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this,"TextView",Toast.LENGTH_SHORT).show(); //[Comment] Remove if, and Toast.makeText(this, view.getClass().getSimpleName(),Toast.LENGTH_SHORT).show()
         }
     }
 
